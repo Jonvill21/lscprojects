@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;700&family=Rubik+Mono+One&display=swap');
+/*
+font-family: 'Kanit', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+colors: #9900CC; (pink) #000099; (blue) #330066; (dark purple)
+*/
+* {
+  margin: 0;
+}
+
+html {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 span {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.1em;
+  display: block;
+}
+
+header h2 {
+  font-size: 1em;
+  color: #9900CC;
+  font-family: 'Kanit', sans-serif;
+  text-shadow: 2px 2px 2px #000099;
+}
+
+main {
+  font-size: 1.4em;
+}
+
+main h2 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.1em;
+  font-weight: 100;
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main p {
+  padding: 10px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  text-indent: 8%;
+}
+
+main section:nth-of-type(n+2) {
+  padding-top: 20px;
+}
+
+main table caption {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 100;
+}
+
+main section:nth-last-of-type(1) {
+  padding-bottom: 20px;
+}
+
+main section:nth-last-of-type(1) p:nth-of-type(even) {
+  background: #111;
+}
+
+main em {
+  font-weight: bold;
+  color: #ccc;
+}
+
+table, td, th {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+}
+
+table td {
+font-family: 'Kanit', sans-serif;
+font-weight: 600;
+}
+
+table th {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 100;
+  color: #aaa;
+  text-align: left;
+}
+
+table tr:nth-of-type(even) {
+  background: #111;
+}
+
+table tbody td:nth-of-type(odd) {
+  color: #9900CC;
+}
+
+footer {
+  grid-area: footer;
+  font-size: 1.1em;
+  background: #330066;
+  padding: 10px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 440px) {
+
+  body {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+
+  header {
+    background-image: url(images/headphones_mobile.png);
+    background-repeat:  no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 200px;
+  }
+  main img {
+    display: none;
+  }
+
+  .intro, .main {
+    padding: 0 20px;
+  }
+
+}
+
+@media only screen and (min-width: 441px) and (max-width: 760px) {
+
+  body {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+
+  header {
+    background-image: url(images/headphone_tablet_web.png);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height: 320px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header h2 {
+    font-size: 1.2em;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .intro, .main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main img {
+    display: none;
+  }
+
+  main section:nth-of-type(n+2) {
+    padding-top: 30px;
+  }
+
+  footer {
+    padding-left: 30px;
+  }
+
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1030px) {
+
+  body {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+
+  header {
+    background-image: url(images/headphone_tablet_web.png);
+    background-repeat:  no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+  }
+
+  header h1 {
+    padding: 20px 0 0 30px;
+    font-size: 3em;
+  }
+
+  header h2 {
+    padding-left: 30px;
+    font-size: 1.2em;
+  }
+
+  main img {
+    max-width: 150px;
+  }
+
+  .intro, .main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .table {
+    padding: 20px;
+  }
+
+  td, th {
+    padding-left: 10px;
+  }
+
+  footer {
+    padding-left: 50px;
+  }
+
+}
+
+@media only screen and (min-width: 1030px) {
+
+  header {
+    background-image: url(images/headphone_tablet_web.png);
+    background-repeat:  no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+  }
+
+  header h1 {
+    padding-top: 20px;
+    padding-left: 12%;
+    font-size: 3em;
+  }
+
+  header h2 {
+    padding-left: 12%;
+    font-size: 1.2em;
+  }
+
+  main {
+    font-size: 1.5em;
+  }
+
+  main img {
+    max-width: 250px;
+  }
+
+  .intro, .main {
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .table {
+    max-width: 90ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  td, th {
+    padding-left: 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+}

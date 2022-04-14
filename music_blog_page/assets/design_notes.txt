@@ -1,0 +1,12 @@
+Title: Music Blog Entry
+(Get to know the Designer)
+
+The project consists of creating a single page formatted as a blog entry to share your favorite top 10 music albums or songs of all time.
+
+The blog entry should demonstrate intentional design and have all the elements of a blog (header, blog title, blog entry content, subtitle, and footer). It should include interesting content, graphics, and a visually appealing and clean layout.
+
+The table must include at least 10 rows and 4 columns. Example: Song or album name, artist or band, genre, and song duration or year the album was published.
+
+Link to Figma Design below:
+
+https://www.figma.com/file/h13DjSRwxOTVThF1UVvU9F/Wireframe-for-design-D?node-id=0%3A1
